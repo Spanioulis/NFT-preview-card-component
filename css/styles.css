@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    font-family: 'Outfit', sans-serif;
+    margin: 75px;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1rem;
+    height: auto;
+    width: 200px;
+    border-radius: 2%;
+    /* box-shadow: -5px 5px 25px; */
+    box-shadow: 0 10px 30px 5px;
+
+}
+
+figure {
+    position: relative;
+}
+
+figure #equilibrium {
+    height: auto;
+    width: 100%;
+    border-radius: 3%;
+    margin-bottom: 0.8rem;
+    /* position: relative; */
+}
+
+figure .capa {
+    width: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 1;
+    visibility: hidden;
+}
+
+figure:hover>.capa {
+    cursor: pointer;
+    width: 100%;
+    height: 92%;
+    opacity: 0.5;
+    visibility: visible;
+    background-repeat: no-repeat;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+#equilibrium2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 0.8rem;
+}
+
+#equilibrium2:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+#equilibrium3 {
+    margin-bottom: 0.8rem;
+}
+
+p {
+    font-size: 0.7rem;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 0.8rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-self: center;
+    gap: 0.4rem;
+    margin-bottom: 0;
+
+}
+
+#ethereum {
+    width: 12%;
+    height: auto;
+}
+
+.eth2 {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-self: center;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    margin: 0 5px 0 0;
+    gap: 0.3rem;
+
+}
+
+#clock {
+    width: 15%;
+}
+
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#line {
+    height: 0.05rem;
+    width: 100%;
+    border: none;
+    background-color: hsl(215, 51%, 70%);
+    margin: 0.8rem 0 0.8rem 0;
+}
+
+#avatar {
+    height: auto;
+    width: 13%;
+    border: red;
+    margin-right: 10px;
+    /* TODO: realizar sombreado */
+    /* border-radius: 3%; */
+}
+
+#jules {
+    margin: 0;
+}
+
+
+span {
+    color: beige;
+}
+
+span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+footer {
+    color: goldenrod;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution {
+    color: goldenrod;
+}
+
+@media (max-width: 375px) {
+    body {
+        margin: 25px 0 0 0;
+    }
+
+    footer {
+        color: goldenrod;
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 2rem 4rem 0 4rem;
+    }
+}
